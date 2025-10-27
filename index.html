@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Ronaldo reemias Araujo">
+    <link rel="icon" href="img/global_globe_earth_protection_shield_icon_124651.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Currículo Ronaldo</title>
+</head>
+<body>
+
+    <!---aqui vai ficar o whatsapp flutuante-->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5582988873225" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        </a>
+
+    </div>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/img/logo.jpg" alt="Foto de Ronaldo">
+                <h3>Currículo Digital</h3>
+            </div>
+            <div class="nav-search">
+                <input type="text" class="barra" placeholder="Pesquisar..." id="busca">
+                <button onclick="pesquisar()">Pesquisar</button>
+                <button onclick="proximoResultado()" id="btn-proximo" style="display:none;">Próximo</button>
+            </div>
+            <button class="menu-toggle" onclick="abrirMenu()">☰</button>
+        </div>
+    </nav>
+
+    <div class="menu-lateral" id="menuLateral">
+        <button class="fechar-menu" onclick="fecharMenu()">×</button>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+
+    <div class="container-cabeca">
+        <div class="foto">
+            <img src="img/ronaldo.jpg" alt="Foto de Ronaldo">
+        </div>
+
+        <div class="nome">
+            <h1 class="palavra-maior">Portfólio Digital</h1>
+            <h1 class="palavra-menor">Seja bem vindo(a)</h1>
+        </div>
+        
+        <div class="botao-download" style="gap: 10px;">
+            <a href="curriculo/curriculo - ronaldo.pdf" download>Baixar Currículo</a>
+            <a href="https://github.com/ronaldoreemias" class="github-link" target="_blank">Github  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github" style="width: 20px; height: 20px;"></a>
+            <a href="https://wa.me/5582988873225" style="background-color: green;" class="github-link" target="_blank">WhatsApp <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; height: 20px;"></a>
+        </div>
+    </div>
+    
+    <div class="nome-2">
+        <h1>Habilidades técnicas</h1>
+    </div>
+        
+    <div class="sobre-conteudo">
+        <div class="carrocel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cursosabeline.com.br/webroot/cur_cursos/curso-com-certificado-de-manutencao-de-celulares-1567528410.jpg" class="d-block w-100" alt="Manutenção de Celulares">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.cajamarnet.com.br/images/sites.png" class="d-block w-100" alt="Desenvolvimento de Sites">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://penser.com.br/wp-content/uploads/2021/01/aplicativos-office.jpg" class="d-block w-100" alt="Pacote Office">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="sobre">
+            <h2>Apresentação Profissional</h2>
+            <p class="intro">
+                Sou um profissional dedicado, versátil e com grande facilidade de adaptação a diferentes ambientes e demandas. Tenho experiência e habilidades sólidas em áreas técnicas e administrativas, o que me permite contribuir de forma eficiente em diversos setores.
+            </p>
+
+            <p class="closing">
+                Sou comprometido com a qualidade do trabalho, atento aos detalhes e sempre disposto a aprender e evoluir. Tenho facilidade para trabalhar em equipe, boa comunicação e foco em resultados. Busco uma oportunidade para aplicar meus conhecimentos e crescer profissionalmente.
+            </p>
+        </div>
+    </div>
+
+    <div class="habilidades-tecnicas">
+    <h2 class="titulo-principal">Habilidades Técnicas</h2>
+
+    <div class="area-skills">
+        <div class="skills-grid">
+            <!-- Card Manutenção -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="icon">💻</span>
+                    <span class="skill-title">Manutenção e Reparo</span>
+                </div>
+                <p class="skill-desc">Celulares e computadores; diagnóstico preciso e soluções rápidas.</p>
+                
+                <div class="skill-content">
+                    <p class="skill-bio">Sou Ronaldo, técnico em manutenção de celulares. Faço troca de display e tela frontal, reparo de câmera, placa lógica e conector de carga, além de aplicar película com precisão.</p>
+                    
+                    <div class="projetos-grid">
+                        <div class="projeto-item">
+                            <div class="projeto-img">
+                                <img src="img/zaptec.jpg" alt="Manutenção de Celulares">
+                                <div class="projeto-overlay">
+                                    <a href="https://www.instagram.com/zaptec_mcz/" class="projeto-link">Instagram</a>
+                                </div>
+                            </div>
+                            <span class="projeto-label">Serviços para Celular</span>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <div class="projeto-img">
+                                <img src="img/zaptecPC.png" alt="Manutenção de Computadores">
+                                <div class="projeto-overlay">
+                                    <a href="https://www.instagram.com/zaptec_mcz/" class="projeto-link">Instagram</a>
+                                </div>
+                            </div>
+                            <span class="projeto-label">Serviços para PC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Desenvolvimento -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="icon">🌐</span>
+                    <span class="skill-title">Desenvolvimento</span>
+                </div>
+                <p class="skill-desc">Criação de sites e sistemas desktop com boas práticas.</p>
+                <div class="skill-examples">
+                    <span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Assembly (ainda em aprendizado)</span>
+                    <span class="tech-tag">Bootstrap</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                     <span class="tech-tag">Git</span>
+                </div>
+                                    <div class="projetos-grid">
+                        <div class="projeto-item">
+                            <div class="projeto-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bGEl9v47XieEtHyj0TqTr1tOXJmib-KHtw&s" alt="Manutenção de Celulares">
+                                <div class="projeto-overlay">
+                                    <a href="https://www.linkedin.com/in/ronaldo-reemias-737977317/" class="projeto-link">LinkedIn</a>
+                                </div>
+                            </div>
+                            <span class="projeto-label">LinkedIn</span>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <div class="projeto-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tvx2BFjpYmfiIBLV25XIfVZy4KhCYFLB7w&s" alt="Manutenção de Computadores">
+                                <div class="projeto-overlay">
+                                    <a href="https://github.com/ronaldoreemias" class="projeto-link">Github</a>
+                                </div>
+                            </div>
+                            <span class="projeto-label">Github</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="icon">🛡️</span>
+                    <span class="skill-title">Cibersegurança</span>
+                </div>
+                <p class="skill-desc">Proteção de sistemas, redes e dados contra ameaças digitais.</p>
+
+                <div class="skill-examples">
+                    <span class="tech-tag">Segurança da Informação</span>
+                    <span class="tech-tag">Redes TCP/IP</span>
+                    <span class="tech-tag">Linux/Windows</span>
+                    <span class="tech-tag">Wireshark</span>
+                    <span class="tech-tag">Nmap</span>
+                    <span class="tech-tag">Metasploit</span>
+                    <span class="tech-tag">Python (básico)</span>
+                </div>
+
+                <div class="projetos-grid">
+                    <div class="projeto-item">
+                        <div class="projeto-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bGEl9v47XieEtHyj0TqTr1tOXJmib-KHtw&s" alt="Manutenção de Celulares">
+                            <div class="projeto-overlay">
+                                <a href="https://www.linkedin.com/in/ronaldo-reemias-737977317/" class="projeto-link">LinkedIn</a>
+                            </div>
+                        </div>
+                        <span class="projeto-label">Perfil Profissional</span>
+                    </div>
+
+                    <div class="projeto-item">
+                        <div class="projeto-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-tvx2BFjpYmfiIBLV25XIfVZy4KhCYFLB7w&s" alt="Manutenção de Computadores">
+                            <div class="projeto-overlay">
+                                <a href="https://github.com/ronaldoreemias" class="projeto-link">Github</a>
+                            </div>
+                        </div>
+                        <span class="projeto-label">Projetos e Ferramentas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 20px;">
+
+    <div style="display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;">
+
+        <div class="skill-card">
+                <div class="skill-header">
+                    <span class="icon">🧾</span>
+                    <span class="skill-title">Pacote Office</span>
+                </div>
+                <p class="skill-desc">Produção de relatórios, planilhas e apresentações com agilidade.</p>
+                <div class="skill-examples">
+                    <span class="tech-tag">Word</span>
+                    <span class="tech-tag">Excel</span>
+                    <span class="tech-tag">PowerPoint</span>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div>
+        <div>
+            <img src="img/ronaldo.jpg" alt="">
+        </div>
+        <div>
+            <h3>Redes Sociais</h3>
+            <a href="https://www.instagram.com/zaptec_mcz/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/in/ronaldo-reemias-737977317/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/ronaldoreemias" target="_blank">Github</a>
+        </div>
+        <div>
+            <h3>Contato</h3>
+            <p>Email: <a href="mailto:ronaldoreemias@gmail.com">ronaldoreemias@gmail.com</a></p>
+        </div>
+    </div>
+        <p>&copy; 2024 Currículo Digital de Ronaldo. Todos os direitos reservados.</p>
+</div>
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
