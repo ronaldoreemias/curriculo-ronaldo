@@ -64,23 +64,9 @@ input[type="text"]::placeholder {
   width: 95%;
 }
 
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.nav-logo img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-left: 30px;
-}
-
 .nav-logo h3 {
   color: white;
-  margin: 0;
+  margin-left: 20px;
   font-weight: 500;
 }
 
@@ -803,6 +789,7 @@ input[type="text"]::placeholder {
 .footer > div > div:nth-child(3) {
     animation-delay: 0.4s;
 }
+
 
 
 
